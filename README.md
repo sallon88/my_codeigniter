@@ -1,16 +1,22 @@
-this little application can help you
+# install 
+		git clone https://github.com/EllisLab/CodeIgniter.git codeigniter
+		git clone https://github.com/sallon88/my_codeigniter.git my_codeigniter
+		rsync -r my_codeigniter/ codeigniter/
 
-1. intergrate smarty, you can utilize it this way:
-	$this->load->library('smarty');
-	$this->smarty->display('demo', $data);
-	same as the native $this->load->view() does;
+# examples
 
-2. immigrate brophp's handy D() function to codeigniter. it's actually a lightweight ORM. you can utilize it simply by:
-	$this->load->helper('bro');
-	$model=D('tablename');
-	$model->find($id);
-	$model->update();etc..
+1. to use smarty
+		$this->load->library('smarty');
+		$this->smarty->display('demo', $data);
 
-3. intergrate the powerful JUI framework, to use it, just extends your controller with MY_Controller, you can get a better understanding of the usage by checking the demo examples;
+2. to use helper D
+		$this->load->helper('bro');
+		$model=D('tablename');
+		$model->find($id);
+		$model->update();etc..
+
+3. to use jui, just extends MY_Controller
+		class Demo extends MY_Controller {
+		}
 
 enjoy!
