@@ -18,6 +18,7 @@ $this->load->helper('bro');
 $model=D('tablename');
 $model->find($id);
 $model->update();
+```
 
 to use [jui](j-ui.com), extends MY_Controller,
 ```
